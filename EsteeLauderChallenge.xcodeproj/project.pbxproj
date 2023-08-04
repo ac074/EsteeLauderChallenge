@@ -7,18 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D54972962A79BBBE0014974E /* FifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54972952A79BBBE0014974E /* FifthView.swift */; };
 		D59727752A733F3D00E11361 /* EsteeLauderChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59727742A733F3D00E11361 /* EsteeLauderChallengeApp.swift */; };
 		D59727772A733F3D00E11361 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59727762A733F3D00E11361 /* ContentView.swift */; };
 		D59727792A733F3F00E11361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59727782A733F3F00E11361 /* Assets.xcassets */; };
 		D597277C2A733F3F00E11361 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D597277B2A733F3F00E11361 /* Preview Assets.xcassets */; };
+		D59727832A733F6300E11361 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59727822A733F6300E11361 /* SecondView.swift */; };
+		D59727882A73427E00E11361 /* SP23_Nutritious_Hero_Campaign_Hero_Film_30s_1920x1080_Sound_Super_GLOBAL_COMP.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D59727872A73427E00E11361 /* SP23_Nutritious_Hero_Campaign_Hero_Film_30s_1920x1080_Sound_Super_GLOBAL_COMP.mp4 */; };
+		D597278A2A73472900E11361 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59727892A73472900E11361 /* ThirdView.swift */; };
+		D597278C2A73568000E11361 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D597278B2A73568000E11361 /* FirstView.swift */; };
+		D5BE93E42A746B3A00CC8736 /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE93E32A746B3A00CC8736 /* FourthView.swift */; };
+		D5C39A832A7C465300EFF875 /* AkzidenzGroteskBQ-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5C39A822A7C465300EFF875 /* AkzidenzGroteskBQ-Bold.otf */; };
+		D5C39AA02A7C4DBE00EFF875 /* OptimaDisplay-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5C39A9F2A7C4DBE00EFF875 /* OptimaDisplay-Roman.otf */; };
+		D5C39AA22A7C511800EFF875 /* OptimaEL-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5C39AA12A7C511800EFF875 /* OptimaEL-Roman.otf */; };
+		D5C39AA42A7C96DE00EFF875 /* SixthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C39AA32A7C96DE00EFF875 /* SixthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D54972952A79BBBE0014974E /* FifthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthView.swift; sourceTree = "<group>"; };
 		D59727712A733F3D00E11361 /* EsteeLauderChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsteeLauderChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59727742A733F3D00E11361 /* EsteeLauderChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsteeLauderChallengeApp.swift; sourceTree = "<group>"; };
 		D59727762A733F3D00E11361 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D59727782A733F3F00E11361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D597277B2A733F3F00E11361 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D59727822A733F6300E11361 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		D59727872A73427E00E11361 /* SP23_Nutritious_Hero_Campaign_Hero_Film_30s_1920x1080_Sound_Super_GLOBAL_COMP.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SP23_Nutritious_Hero_Campaign_Hero_Film_30s_1920x1080_Sound_Super_GLOBAL_COMP.mp4; sourceTree = "<group>"; };
+		D59727892A73472900E11361 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		D597278B2A73568000E11361 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		D5BE93E32A746B3A00CC8736 /* FourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthView.swift; sourceTree = "<group>"; };
+		D5C39A822A7C465300EFF875 /* AkzidenzGroteskBQ-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AkzidenzGroteskBQ-Bold.otf"; sourceTree = "<group>"; };
+		D5C39A9E2A7C4A3100EFF875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5C39A9F2A7C4DBE00EFF875 /* OptimaDisplay-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OptimaDisplay-Roman.otf"; sourceTree = "<group>"; };
+		D5C39AA12A7C511800EFF875 /* OptimaEL-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OptimaEL-Roman.otf"; sourceTree = "<group>"; };
+		D5C39AA32A7C96DE00EFF875 /* SixthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +72,17 @@
 		D59727732A733F3D00E11361 /* EsteeLauderChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				D5C39A9E2A7C4A3100EFF875 /* Info.plist */,
 				D59727742A733F3D00E11361 /* EsteeLauderChallengeApp.swift */,
 				D59727762A733F3D00E11361 /* ContentView.swift */,
+				D597278B2A73568000E11361 /* FirstView.swift */,
+				D59727822A733F6300E11361 /* SecondView.swift */,
+				D59727892A73472900E11361 /* ThirdView.swift */,
+				D5BE93E32A746B3A00CC8736 /* FourthView.swift */,
+				D54972952A79BBBE0014974E /* FifthView.swift */,
+				D5C39AA32A7C96DE00EFF875 /* SixthView.swift */,
+				D59727872A73427E00E11361 /* SP23_Nutritious_Hero_Campaign_Hero_Film_30s_1920x1080_Sound_Super_GLOBAL_COMP.mp4 */,
+				D5C39A812A7C45EE00EFF875 /* Font */,
 				D59727782A733F3F00E11361 /* Assets.xcassets */,
 				D597277A2A733F3F00E11361 /* Preview Content */,
 			);
@@ -65,6 +95,16 @@
 				D597277B2A733F3F00E11361 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5C39A812A7C45EE00EFF875 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D5C39A822A7C465300EFF875 /* AkzidenzGroteskBQ-Bold.otf */,
+				D5C39A9F2A7C4DBE00EFF875 /* OptimaDisplay-Roman.otf */,
+				D5C39AA12A7C511800EFF875 /* OptimaEL-Roman.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +165,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59727882A73427E00E11361 /* SP23_Nutritious_Hero_Campaign_Hero_Film_30s_1920x1080_Sound_Super_GLOBAL_COMP.mp4 in Resources */,
+				D5C39A832A7C465300EFF875 /* AkzidenzGroteskBQ-Bold.otf in Resources */,
+				D5C39AA22A7C511800EFF875 /* OptimaEL-Roman.otf in Resources */,
+				D5C39AA02A7C4DBE00EFF875 /* OptimaDisplay-Roman.otf in Resources */,
 				D597277C2A733F3F00E11361 /* Preview Assets.xcassets in Resources */,
 				D59727792A733F3F00E11361 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D597278A2A73472900E11361 /* ThirdView.swift in Sources */,
+				D597278C2A73568000E11361 /* FirstView.swift in Sources */,
+				D59727832A733F6300E11361 /* SecondView.swift in Sources */,
 				D59727772A733F3D00E11361 /* ContentView.swift in Sources */,
+				D5BE93E42A746B3A00CC8736 /* FourthView.swift in Sources */,
+				D54972962A79BBBE0014974E /* FifthView.swift in Sources */,
 				D59727752A733F3D00E11361 /* EsteeLauderChallengeApp.swift in Sources */,
+				D5C39AA42A7C96DE00EFF875 /* SixthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +319,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EsteeLauderChallenge/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EsteeLauderChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EsteeLauderChallenge/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EsteeLauderChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
