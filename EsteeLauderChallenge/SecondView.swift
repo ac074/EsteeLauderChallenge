@@ -103,14 +103,14 @@ struct SecondView: View {
             }
             .padding(.horizontal, 10)
 
-            // Pagination indicators
+            // Page indicators (dots)
             HStack(spacing: 10) {
                 ForEach(0..<images.count, id: \.self) { index in
                     Circle()
                         .foregroundColor(selectedIndex.wrappedValue == index ? .black : .gray)
                         .frame(width: 10, height: 10)
                         .scaleEffect(selectedIndex.wrappedValue == index ? 1.5 : 1.0) // Adjust the scale of the selected dot
-                        .animation(.spring()) // Add animation for a smoother transition
+                        .animation(.spring())
                 }
             }
         }

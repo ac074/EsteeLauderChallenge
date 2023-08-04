@@ -58,14 +58,13 @@ struct ContentView: View {
 
             // SeventhView without navigation bar
             if showSixthView {
-                SixthView() // Display SeventhView when showSixthView is true
-                    // Apply fade-in/fade-out transition when showing or hiding SeventhView
+                SixthView()
                     .transition(.opacity)
                     // Set a delay and then hide SeventhView after 10 seconds
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
                             withAnimation {
-                                showSixthView = false // Hide SeventhView after 10 seconds
+                                showSixthView = false // Hide SixthView after 10 seconds
                             }
                         }
                     }

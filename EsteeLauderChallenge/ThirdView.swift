@@ -18,19 +18,23 @@ struct ThirdView: View {
         Card(imageName: "RadiantLotionPic", matchingImageName: "RadiantLotion"),
         Card(imageName: "2in1Pic", matchingImageName: "2in1"),
         Card(imageName: "AiryLotionPic", matchingImageName: "AiryLotion"),
-        // Add more cards with different image names and texts
     ]
+    
+    // Initialize highScore to Int.max when the view is created
     init() {
-            // Initialize highScore to Int.max when the view is created
-            _highScore = State(initialValue: Int.max)
-           }
+        _highScore = State(initialValue: Int.max)
+    }
     @State private var openedCardIndices = [Int]()
     @State private var matches = 0
     @State private var gridID = UUID()
     @State private var turns = 0
-    @State private var highScore: Int? // Initialize highScore to nil
-    @State private var showHighScore = false // variable to control when to show the high score
     @State private var completedGames = 0
+    
+    // Initialize highScore to nil
+    @State private var highScore: Int?
+    
+    // Control when to show the high score
+    @State private var showHighScore = false
 
     var body: some View {
         VStack {
@@ -39,7 +43,7 @@ struct ThirdView: View {
 
             ZStack {
                 CardGridView(cards: cards, openedCardIndices: $openedCardIndices, matches: $matches, turns: $turns)
-                    .id(gridID) // Use the unique ID for the CardGridView
+                    .id(gridID)
 
                 if matches == 4 {
                     // Display the congratulations message in the middle of the screen
@@ -66,7 +70,8 @@ struct ThirdView: View {
                             Button("PLAY AGAIN") {
                                 resetGame()
                                 completedGames += 1
-                                showHighScore = true // Show the high score after the first game
+                                showHighScore = true
+                                // Show the high score after the first game
                             }
                             .font(.custom("AvenirNextCondensed-Medium", size: 20))
                             .accentColor(.black)
@@ -74,7 +79,7 @@ struct ThirdView: View {
                             .background(Color(red: 255/255.0, green: 216/255.0, blue: 234/255.0))
                             .cornerRadius(8)
                         }
-                        .frame(width: 280) // Limit the width of the VStack to fit inside the white rectangle
+                        .frame(width: 280)
                     }
                 }
             }
@@ -91,6 +96,7 @@ struct ThirdView: View {
                 Spacer()
             }
             .padding()
+            Spacer()
         }
         .onAppear {
             resetGame()
@@ -115,9 +121,14 @@ struct ThirdView: View {
             highScore = turns
         }
 
-        turns = 0 // Reset the turns counter when playing again
-        gridID = UUID() // Change the unique ID to trigger the update of CardGridView
-        showHighScore = completedGames > 0 // Show the high score after the second game
+        // Reset the turns counter when playing again
+        turns = 0
+        
+        // Change the unique ID to trigger the update of CardGridView
+        gridID = UUID()
+        
+        // Show the high score after the second game
+        showHighScore = completedGames > 0
     }
 
     private func shuffleCards() {
@@ -177,14 +188,15 @@ struct CardView: View {
 }
 
 struct CardGridView: View {
-    let columns: Int = 2 // Two columns for a 2x4 grid
+    // Two columns for a 2x4 grid
+    let columns: Int = 2
     let cardWidth: CGFloat = 140
     let cardHeight: CGFloat = 140
 
     @State var cards: [Card]
     @Binding var openedCardIndices: [Int]
-    @Binding var matches: Int // Receive matches as a binding
-    @Binding var turns: Int // Receive turns as a binding
+    @Binding var matches: Int
+    @Binding var turns: Int
 
     var body: some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: columns)) {

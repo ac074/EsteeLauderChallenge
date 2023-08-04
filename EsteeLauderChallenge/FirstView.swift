@@ -56,9 +56,10 @@ struct FirstView: View {
             Text("Oil reducer. Pore minimizer. Redness fighter. The Nutritious Collection is everything skin craves for a blissful, healthy look.")
                 .font(.custom("Verdana", size: 15))
             
-            Spacer() // Add space at the bottom
+            Spacer()
+            // Add space to the bottom to make room for navigation bar
         }
-        .padding(.horizontal) // Add horizontal padding
+        .padding(.horizontal)
     }
 }
 

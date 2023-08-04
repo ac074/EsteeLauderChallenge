@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct FourthView: View {
-    @State private var questionCounter = 0 // Start with the quiz home page
-    @State private var points: [Int] = [0, 0, 0] // Three elements for the three products
+    // Start with the quiz home page
+    @State private var questionCounter = 0
+    
+    // Three elements for the three products
+    @State private var points: [Int] = [0, 0, 0]
     
     var body: some View {
             VStack {
@@ -177,7 +180,7 @@ struct ProductWithPoints {
     let points: Int
 }
 
-// View for the home page
+// View for the quiz home page
 struct InitialView: View {
     @Binding var questionCounter: Int
 
@@ -199,7 +202,8 @@ struct InitialView: View {
                 .padding(.horizontal)
                 .padding(.vertical,15)
             Button(action: {
-                questionCounter += 1 // Increment the question counter on button click
+                // Increment the question counter on button click
+                questionCounter += 1
             }) {
                 Text("CLICK HERE TO FIND OUT...")
                     .font(.custom("AvenirNextCondensed-Medium", size: 18))
@@ -243,9 +247,11 @@ struct QuestionView: View {
                         }
 
                         if questionCounter < 5 {
-                            questionCounter += 1 // Move to the next question
+                            // Move to the next question
+                            questionCounter += 1
                         } else {
-                            questionCounter = 6 // Move to the result view
+                            // Move to the result view
+                            questionCounter = 6
                         }
                     }) {
                         Text((options[index]).uppercased())
@@ -354,9 +360,9 @@ struct ResultView: View {
                     Spacer()
                 }
                 .padding(.vertical, 5)
-                Text("Click the button below to directly shop the products in The New Nutritious Line")
+                Text("Click the button below to shop directly from the Estee Lauder website and view all their amazing products...")
                     .multilineTextAlignment(.center)
-                    .font(.custom("Verdana", size: 21))
+                    .font(.custom("Verdana", size: 18))
                     .padding(5)
                     .background(Color(red: 248/255.0, green: 186/255.0, blue: 197/255.0))
                 Link("SHOP NOW!", destination: URL(string: "https://www.esteelauder.com/products/26393/product-catalog/skin-care/skin-care-collections/nutritious")!)
@@ -379,14 +385,14 @@ struct ResultView: View {
                         selectedIndex = (selectedIndex + 1) % imagesCarousel.count
                     }
 
-                    // Black pagination indicators (dots)
+                    // Image indicators - dots
                     HStack(spacing: 10) {
                         ForEach(0..<imagesCarousel.count, id: \.self) { index in
                             Circle()
                                 .foregroundColor(selectedIndex == index ? .black : .gray)
                                 .frame(width: 10, height: 10)
-                                .scaleEffect(selectedIndex == index ? 1.5 : 1.0) // Adjust the scale of the selected dot
-                                .animation(.spring()) // Add animation for a smoother transition
+                                .scaleEffect(selectedIndex == index ? 1.5 : 1.0)
+                                .animation(.spring())
                         }
                     }
                 }
